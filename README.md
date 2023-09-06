@@ -18,6 +18,11 @@ Batch install with:
 
 `install.packages(c("optparse", "seqinr", "reshape2", "dplyr", "stringr", "tidyverse", "magrittr", "RColorBrewer"))`
 
+## Usage
+```
+Rscript --vanilla AlleleSortR-main.R --input_alignment_directory <CHARACTER> --output_directory <CHARACTER> --number_of_samples <INTEGER> --iterations <INTEGER> --cut_between_iterations <yes or no> --cut_on_final_iteration <yes or no>
+```
+
 ## Overview
 The program works iteratively, where the user provides the number of iterations to run and the first iteration uses the provided input alignments. Subsequent iterations use the sorted/renamed alignments that were generated in the previous iteration.
 
@@ -40,7 +45,7 @@ Steps:
      - If the allele sequence in question does not match with its corresponding allele from the same biological sample & If the sequence it is associated with in the renaming table is among the best matches, then rename the sequence according to the renaming table. Renamed sequences follow the format 'ORIGINAL_SEQ_NAME_matched_to_NAME_2_MATCH'
      - Write out the alignment with newly renamed sequences.
 
-There are options to tell the program whether to remove the renamed sequences (i.e., the "_matched_to_" sequences) between iterations and from the final alignments (). The user may want to retain these renamed sequences to infer potential relationships of a subgenome, however these may also simply be 'rogue' alleles that do not pair with their corresponding allele due to non-biological processes - in this case their inclusion will lead to the inclusion of noise.
+There are options to tell the program whether to remove the renamed sequences (i.e., the "matched_to" sequences) between iterations and from the final alignments. The user may want to retain these renamed sequences to infer potential relationships of a subgenome, however these may also simply be 'rogue' alleles that do not pair with their corresponding allele due to non-biological processes - in this case their inclusion will lead to the inclusion of noise.
 
 The first iteration of this process is detailed in the below diagram:
 ![overview.pdf](overview.jpg)
