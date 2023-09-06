@@ -4,7 +4,7 @@ A program for sorting and removing non-monophyletic allele sequences from phased
 It assumes that there are two allele sequences for each sample in every alignment. If homozygous sequences are treated as single sequences in your alignments, then you can 'phony-phase' them with the script 'phony_phase_homozygotes.py' found [here](https://github.com/hkore1/python_scripts/blob/main/phony_phase_homozygotes.py).
 
 ## Required packages:
-AlleleSortR requires the following packages:
+Requires the following packages:
 * optparse
 * seqinr
 * reshape2
@@ -48,7 +48,7 @@ Options:
 ```
 
 ## Overview
-The program works iteratively, where the user provides the number of iterations to run and the first iteration uses the provided input alignments. Subsequent iterations use the sorted/renamed alignments that were generated in the previous iteration.
+The program works iteratively, whereby the user provides the number of iterations to run and the first iteration uses the provided input alignments. Subsequent iterations use the sorted/renamed alignments that were generated in the previous iteration.
 
 Steps:
 
