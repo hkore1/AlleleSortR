@@ -20,7 +20,31 @@ Batch install with:
 
 ## Usage
 ```
-Rscript --vanilla AlleleSortR-main.R --input_alignment_directory <CHARACTER> --output_directory <CHARACTER> --number_of_samples <INTEGER> --iterations <INTEGER> --cut_between_iterations <yes or no> --cut_on_final_iteration <yes or no>
+Rscript --vanilla AlleleSortR-main.R -a <input_alignment_directory> -o <output_directory> -n <number_of_samples> -i <iterations> -c <yes or no> -f <yes or no>
+```
+
+```
+Options:
+	-a CHARACTER, --input_alignment_directory=CHARACTER
+		Path to input directory of fasta alignments
+
+	-o CHARACTER, --output_directory=CHARACTER
+		Name for the output directory [default = AlleleSortR_output]
+
+	-n INTEGER, --number_of_samples=INTEGER
+		The maximum number of sequences in any alignment 
+
+	-i INTEGER, --iterations=INTEGER
+		The number of iterations to run the sorter for [default = 1]
+
+	-c YES OR NO, --cut_between_iterations=YES OR NO
+		Strip previously sorted sequences between iterations? [default = yes]
+
+	-f YES OR NO, --cut_on_final_iteration=YES OR NO
+		Strip sorted sequences in the final iteration? (i.e. so final alignments have no sorted seqs) [default= yes]
+
+	-h, --help
+		Show this help message and exit
 ```
 
 ## Overview
