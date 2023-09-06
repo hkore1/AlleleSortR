@@ -72,5 +72,5 @@ Steps for each iteration:
 There are options to tell the program whether to remove the renamed sequences (i.e., the "matched_to" sequences) between iterations and from the final alignments. The user may want to retain these renamed sequences to infer potential relationships of a subgenome, however these may also simply be 'rogue' alleles that do not pair with their corresponding allele due to non-biological processes - in this case their inclusion will lead to the inclusion of noise.
 
 
-The first iteration of this process below...
+The first iteration of this process is detailed below...
 ![overview.pdf](overview.jpg)
