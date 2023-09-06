@@ -17,3 +17,5 @@ AlleleSortR requires the following packages:
 Batch install with:
 
 `install.packages(c("optparse", "seqinr", "reshape2", "dplyr", "stringr", "tidyverse", "magrittr", "RColorBrewer"))`
+
+## Overview
