@@ -3,14 +3,15 @@ An R program for sorting and removing non-monophyletic allele sequences from pha
 
 ## Required packages:
 AlleleSortR requires the following packages:
-optparse
-seqinr
-reshape2
-dplyr
-stringr
-tidyverse
-magrittr
-RColorBrewer
+*optparse
+*seqinr
+*reshape2
+*dplyr
+*stringr
+*tidyverse
+*magrittr
+*RColorBrewer
 
 Batch install with:
+
 `install.packages(c("optparse", "seqinr", "reshape2", "dplyr", "stringr", "tidyverse", "magrittr", "RColorBrewer"))`
