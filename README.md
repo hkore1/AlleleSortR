@@ -19,4 +19,4 @@ Batch install with:
 `install.packages(c("optparse", "seqinr", "reshape2", "dplyr", "stringr", "tidyverse", "magrittr", "RColorBrewer"))`
 
 ## Overview
-![overview.pdf](overview.pdf)
+![overview.pdf](overview.jpg)
