@@ -19,4 +19,4 @@ Batch install with:
 `install.packages(c("optparse", "seqinr", "reshape2", "dplyr", "stringr", "tidyverse", "magrittr", "RColorBrewer"))`
 
 ## Overview
-![overview.pdf](https://github.com/hkore1/AlleleSortR/blob/main/overview.pdf)
+![overview.pdf](overview.pdf)
