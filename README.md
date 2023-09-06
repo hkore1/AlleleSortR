@@ -50,7 +50,7 @@ Options:
 ## Overview
 The program works iteratively, whereby the user provides the number of iterations to run and the first iteration uses the provided input alignments. Subsequent iterations use the sorted/renamed alignments that were generated in the previous iteration.
 
-Steps:
+Steps for each iteration:
 
 1. Loop over each alignment:
    * Calculate pairwise distances between each allele sequence
@@ -71,5 +71,6 @@ Steps:
 
 There are options to tell the program whether to remove the renamed sequences (i.e., the "matched_to" sequences) between iterations and from the final alignments. The user may want to retain these renamed sequences to infer potential relationships of a subgenome, however these may also simply be 'rogue' alleles that do not pair with their corresponding allele due to non-biological processes - in this case their inclusion will lead to the inclusion of noise.
 
-The first iteration of this process is detailed in the below diagram:
+
+The first iteration of this process below...
 ![overview.pdf](overview.jpg)
