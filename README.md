@@ -55,7 +55,7 @@ Steps:
 1. Loop over each alignment:
    * Calculate pairwise distances between each allele sequence
    * For each sequence, take the best match(es) with the smallest distances and record these in a table
-   * If the corresponding allele of a sequence is among the best matches, then remove this allele from the table
+   * If the corresponding allele (i.e. from the same bioloigcal sample) of a sequence is among the best matches, then exclude this sequence from the table
 2. Combine the tables from each alignment
 3. Calculate a co-occurrence matrix, with each cell containing a count of the number of times that each sequence is paired
    * This is plotted as a heatmap
