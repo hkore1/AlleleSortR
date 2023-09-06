@@ -40,5 +40,7 @@ Steps:
      - If the allele sequence in question does not match with its corresponding allele from the same biological sample & If the sequence it is associated with in the renaming table is among the best matches, then rename the sequence according to the renaming table. Renamed sequences follow the format 'ORIGINAL_SEQ_NAME_matched_to_NAME_2_MATCH'
      - Write out the alignment with newly renamed sequences.
 
-One iteration of this process is detailed in the below diagram:
+There are options to tell the program whether to remove the renamed sequences (i.e., the "_matched_to_" sequences) between iterations and from the final alignments (). The user may want to retain these renamed sequences to infer potential relationships of a subgenome, however these may also simply be 'rogue' alleles that do not pair with their corresponding allele due to non-biological processes - in this case their inclusion will lead to the inclusion of noise.
+
+The first iteration of this process is detailed in the below diagram:
 ![overview.pdf](overview.jpg)
